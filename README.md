@@ -64,14 +64,14 @@ project/
 
 You can install everything with:
 
-bash
+```bash
 pip install langchain langchain-core langchain-chroma langchain-huggingface langchain-ollama sentence-transformers chromadb
-
+```
 Some environments may also require:
 
-bash
+```bash
 pip install pydantic==1.10.13
-
+```
 ### Install Ollama
 Download Ollama:
 
@@ -79,10 +79,10 @@ https://ollama.com/download
 
 Pull the required models:
 
-bash
+```bash
 ollama pull llama3
 ollama pull mistral
-
+```
 Embedding model
 The script uses:
 
@@ -92,27 +92,31 @@ It will download automatically on first run.
 ### How to Run
 Clone the repository
 
-bash
+```bash
 git clone https://github.com/laplasjan/rag.git
 cd rag
+```
 (Optional) Create a virtual environment
 
-bash
+```bash
 python3.11 -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
+```
 Install dependencies
 
-bash
+```bash
 pip install -r requirements.txt
+```
 Ensure Ollama is running
 
 It usually starts automatically.
 
 Run the script
 
-bash
+```bash
 python main.py
+```
 On first run, the vector store will be built:
 
 Kod
@@ -152,15 +156,6 @@ You can add more .txt files to the text/ folder and rebuild the vector store.
 Everything runs locally — no external API calls.
 
 You can swap the LLM model to any Ollama-supported one.
-
-🚀 Future Improvements
-Web UI (FastAPI / Streamlit)
-
-PDF ingestion
-
-Metadata filtering
-
-Chat history memory
 
 📜 License
 MIT License (or your preferred license)
