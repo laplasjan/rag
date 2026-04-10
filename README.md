@@ -41,13 +41,14 @@ In this project:
 ---
 
 ## 📁 Project Structure
+'''bash
 project/
 │
 ├── main.py               # Main RAG script
 ├── text/                 # Place your .txt documents here
 ├── chroma_db/            # Auto-generated vector store
 └── README.md             # Documentation
-
+'''
 
 
 
